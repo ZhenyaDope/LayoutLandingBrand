@@ -1,0 +1,82 @@
+.intro{
+    background: url('../assets/img/intro/bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding-top: 206px;
+    padding-bottom: 23px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__text-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        font-size: 54px;
+        line-height: 50px;
+        span{
+            color:$red;
+        }
+    }
+    &__title-gift{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+    &__subtitle{
+        color: #515050;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 22px;
+        margin-bottom: 56px;
+        text-align: center;
+        max-width:550px;
+    }
+    &__btn{
+        font-size:28px;
+        padding: 15px 40px;
+        margin-bottom: 103px;
+        transition: .3s;
+    }
+    &__btn-down{
+        display: block;
+        height: 62px;
+        width: 64px;
+        border-radius: 50%;
+        text-decoration: none;
+        -webkit-transition: opacity, background-color 0.3s;
+        transition: opacity, background-color 0.3s;
+        opacity: .68;
+        -webkit-box-shadow: 0 0 21px 8px rgba(0, 0, 0, 0.34);
+        box-shadow: 0 0 21px 8px rgba(0, 0, 0, 0.34);
+        margin-right: 52px;
+        margin-bottom: 67px;
+        background: url('../assets/img/intro/arrow.png') no-repeat center center;
+        transition: .3s;
+        &:hover{
+            background-color: #fff;
+            cursor: pointer;
+        }
+    }
+    &__contacts{
+        display: flex;
+        align-items: center;
+        a{
+            margin-right: 20px;
+            font-weight: bold;
+            font-size:22px;
+            text-decoration: none;
+            color:#000;
+            transition: .3s;
+            &:hover{
+                text-decoration: underline;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

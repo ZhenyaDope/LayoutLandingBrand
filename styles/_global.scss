@@ -1,0 +1,32 @@
+
+// Цвета
+
+$red: #f32323;
+
+
+// Контейнер
+.container{
+    max-width: 1230px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+
+
+
+// Кнопки
+
+.red-btn{
+    -webkit-box-shadow: 0 0 10px #f32323;
+    box-shadow: 0 0 10px #f32323;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    background-color: #f32323;
+    border-radius: 50px;
+    text-decoration: none;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    border: none;
+    outline: none;
+}
