@@ -1,0 +1,84 @@
+.advantages{
+    background-color: #e6e6e6;
+    display: flex;
+    &__img{
+        background: url('../assets/img/advantages/bg.jpg') no-repeat center left;
+        width:50%;
+    }
+    &__content{
+        padding: 87px 10px 178px 63px;
+        width:50%;
+    }
+
+    // TODO : СДЕЛАТЬ ОБВОДКУ И ДОБАВИТЬ ОБЁРТКУ
+    &__title{
+        padding-top: 5px;
+        padding-bottom: 12px;
+        background-color: #e6e6e6;
+        margin-bottom: 100px;
+        position: relative;
+        display: inline-block;
+        max-width: 350px;
+        font-size: 54px;
+        line-height: 50px;
+        &::after{
+            width: 354px;
+            height: 213px;
+            top: -25px;
+            z-index: 1;
+            left: 92px;
+            content: '';
+            display: block;
+            border: 1px solid #f32323;
+
+            border-left:none;
+            position: absolute;
+        }
+    }
+    &__list{
+        list-style: none;
+        max-width:width: 420px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    &__item-text{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 10px;
+        
+
+        p{
+            font-weight: 300;
+        }
+    }
+    &__progress{
+        height: 19px;
+        background-color: #fff;
+        border-radius: 30px;
+        position: relative;
+        .first{
+            width:70%;
+        }
+        .second{
+            width: 45%;
+        }
+        .third{
+            width: 90%;
+        }
+        .fourth{
+            width: 50%;
+        }
+    }
+    &__progress-value{
+        height: 19px;
+        border-radius: 30px;
+        background: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
