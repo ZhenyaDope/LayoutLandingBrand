@@ -10,18 +10,10 @@
         width:50%;
     }
 
-    // TODO : СДЕЛАТЬ ОБВОДКУ И ДОБАВИТЬ ОБЁРТКУ
-    &__title{
-        padding-top: 5px;
-        padding-bottom: 12px;
-        background-color: #e6e6e6;
-        margin-bottom: 100px;
-        position: relative;
-        display: inline-block;
+    &__title-wrapper{
         max-width: 350px;
-        font-size: 54px;
-        line-height: 50px;
-        &::after{
+        position: relative;
+        &::before{
             width: 354px;
             height: 213px;
             top: -25px;
@@ -30,7 +22,40 @@
             content: '';
             display: block;
             border: 1px solid #f32323;
-
+            border-left:none;
+            position: absolute;
+        }
+    }
+    &__title{
+        padding-top: 5px;
+        padding-bottom: 12px;
+        background-color: #e6e6e6;
+        margin-bottom: 100px;
+        position: relative;
+        display: inline-block;
+        font-size: 54px;
+        line-height: 50px;
+        &::before{
+            width: 1px;
+            height: 25px;
+            top: -25px;
+            z-index: 1;
+            left: 92px;
+            content: '';
+            display: block;
+            background: #f32323;
+            border-left:none;
+            position: absolute;
+        }
+        &::after{
+            width: 1px;
+            height: 25px;
+            bottom: -22px;
+            z-index: 1;
+            left: 92px;
+            content: '';
+            display: block;
+            background: #f32323;
             border-left:none;
             position: absolute;
         }
