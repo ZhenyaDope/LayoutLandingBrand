@@ -354,7 +354,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 .advantages__list {
   list-style: none;
-  max-width: 80%;
+  max-width: 420px;
 }
 
 .advantages__item {
@@ -379,7 +379,6 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
-  width: 420px;
 }
 
 .advantages__item-text p {
@@ -388,7 +387,6 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 .advantages__progress {
   height: 19px;
-  width: 420px;
   background-color: #fff;
   border-radius: 30px;
   position: relative;
