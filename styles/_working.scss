@@ -1,0 +1,119 @@
+.working{
+    background: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    &__img{
+        width:50%;
+        background: url('../assets/img/working/bg.jpg') no-repeat left top;
+    }
+    &__text{
+        width:50%;
+        background: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        
+        padding: 65px 0 65px 100px;
+    }
+    &__title-wrapper{
+        max-width:250px;
+        position: relative;
+        &::before{
+            content: '';
+            display: block;
+            border: 1px solid #f32323;
+            position: absolute;
+            width: 228px;
+            height: 164px;
+            top: -25px;
+            left: 70px;
+            border-left: none;
+        }
+        
+    }
+    &__title{
+        padding-top: 5px;
+        padding-bottom: 12px;
+        background-color: #e6e6e6;
+        margin-bottom: 90px;
+        text-align: left;
+        font-size: 54px;
+        line-height: 50px;
+        position: relative;
+        &::before{
+            content:'';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 1px;
+            height: 25px;
+            background: #f32323;
+            left:70px;
+            top:-24px;
+        }
+        &::after{
+            content:'';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 1px;
+            height: 25px;
+            background: #f32323;
+            left:70px;
+            bottom:-23px;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 500px;
+        list-style: none;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width:236px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    &__item-number{
+        font-size: 29px;
+        color: #fff;
+        padding: 5px 15px;
+        background-color: #f32323;
+        margin-bottom: 17px;
+        
+        
+    }
+    &__item-text{
+        text-align: center;
+    }
+
+
+    // ARROW
+    .first,.fifth{
+        &::before{
+            content:'';
+            position: absolute;
+            top: 15%;
+            right: -115px;
+            background: url('../assets/img/working/next.png') no-repeat center center;
+            background-size: cover;
+            height: 10px;
+            width: 200px;
+        }
+    }
+    .third{
+        &::before{
+            content:'';
+            position: absolute;
+            top: 15%;
+            left: -115px;
+            background: url('../assets/img/working/prev.png') no-repeat center center;
+            background-size: cover;
+            height: 10px;
+            width: 206px;
+        }
+    }
+}
