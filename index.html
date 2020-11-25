@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Normalize css -->
     <link rel="stylesheet" href="./styles/normalize.css">
     <!-- ------------- -->
+
+    <!-- BEGIN SWIPER SLIDER STYLE -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- END SWIPER SLIDER -->
+
+
     <link rel="stylesheet" href="./styles/style.css">
 
     <title>Brand Landing</title>
 </head>
+
 <body>
     <!-- BEGIN HEADER -->
     <header class="header">
@@ -93,51 +102,51 @@
 
     <!-- BEGIN ADVANTAGES -->
     <section class="advantages">
-                <div class="advantages__img">
-                </div>
-                <div class="advantages__content">
-                    <div class="advantages__title-wrapper">
-                        <h2 class="advantages__title">В чем преимущества лендинга</h2>
+        <div class="advantages__img">
+        </div>
+        <div class="advantages__content">
+            <div class="advantages__title-wrapper">
+                <h2 class="advantages__title">В чем преимущества лендинга</h2>
+            </div>
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <div class="advantages__item-text">
+                        <p>Увеличения количество новых клиентов</p>
+                        <b>70%</b>
                     </div>
-                    <ul class="advantages__list">
-                        <li class="advantages__item">
-                            <div class="advantages__item-text">
-                                <p>Увеличения количество новых клиентов</p>
-                                <b>70%</b>
-                            </div>
-                            <div class="advantages__progress ">
-                                <span class="advantages__progress-value first"></span>
-                            </div>
-                        </li>
-                        <li class="advantages__item">
-                            <div class="advantages__item-text ">
-                                <p>УКонверсия из посетителей в заказы</p>
-                                <b>45%</b>
-                            </div>
-                            <div class="advantages__progress">
-                                <span class="advantages__progress-value second"></span>
-                            </div>
-                        </li>
-                        <li class="advantages__item">
-                            <div class="advantages__item-text">
-                                <p>Эффективность рекламной кампании</p>
-                                <b>90%</b>
-                            </div>
-                            <div class="advantages__progress">
-                                <span class="advantages__progress-value third"></span>
-                            </div>
-                        </li>
-                        <li class="advantages__item">
-                            <div class="advantages__item-text">
-                                <p>Срок окупаемости лендинга</p>
-                                <b>15-30 дней</b>
-                            </div>
-                            <div class="advantages__progress">
-                                <span class="advantages__progress-value fourth"></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="advantages__progress ">
+                        <span class="advantages__progress-value first"></span>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-text ">
+                        <p>УКонверсия из посетителей в заказы</p>
+                        <b>45%</b>
+                    </div>
+                    <div class="advantages__progress">
+                        <span class="advantages__progress-value second"></span>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-text">
+                        <p>Эффективность рекламной кампании</p>
+                        <b>90%</b>
+                    </div>
+                    <div class="advantages__progress">
+                        <span class="advantages__progress-value third"></span>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-text">
+                        <p>Срок окупаемости лендинга</p>
+                        <b>15-30 дней</b>
+                    </div>
+                    <div class="advantages__progress">
+                        <span class="advantages__progress-value fourth"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
     <!-- END ADVANTAGES -->
 
@@ -191,7 +200,8 @@
             <div class="offer__title-wrapper">
                 <h2 class="offer__title">Внимание! Выгодное предложение</h2>
             </div>
-            <p class="offer__subtitle">Оформите заказ на разработку лендинга в течении 10 минут и получите скидку 10%</p>
+            <p class="offer__subtitle">Оформите заказ на разработку лендинга в течении 10 минут и получите скидку 10%
+            </p>
             <a href="#" class="offer__btn red-btn">Оформить заказ</a>
         </div>
         <div class="offer__img">
@@ -200,7 +210,110 @@
     </section>
     <!-- END OFFER -->
 
+    <!-- BEGIN PORTFOLIO -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio__wrapper">
+                <div class="portfolio__title-wrapper">
+                    <h2 class="portfolio__title">Последние наши работы</h2>
+                </div>
+                <div class="portfolio__slider-wrapper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="portfolio__slider-item" href="#">
+                                    <img src="./assets/img/portfolio/1.jpg" alt="Сайт">
+                                    
+                                </a>
+                                <div class="portfolio__slider-item__mask">
+                                    <p>Работа №2</p>
+                                    <a href="#">Посмотреть</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="portfolio__slider-item" href="#">
+                                    <img src="./assets/img/portfolio/1.jpg" alt="Сайт">
+                                    
+                                </a>
+                                <div class="portfolio__slider-item__mask">
+                                    <p>Работа №2</p>
+                                    <a href="#">Посмотреть</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="portfolio__slider-item" href="#">
+                                    <img src="./assets/img/portfolio/1.jpg" alt="Сайт">
+                                    
+                                </a>
+                                <div class="portfolio__slider-item__mask">
+                                    <p>Работа №2</p>
+                                    <a href="#">Посмотреть</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="portfolio__slider-item" href="#">
+                                    <img src="./assets/img/portfolio/1.jpg" alt="Сайт">
+                                    
+                                </a>
+                                <div class="portfolio__slider-item__mask">
+                                    <p>Работа №2</p>
+                                    <a href="#">Посмотреть</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="portfolio__slider-item" href="#">
+                                    <img src="./assets/img/portfolio/1.jpg" alt="Сайт">
+                                    
+                                </a>
+                                <div class="portfolio__slider-item__mask">
+                                    <p>Работа №2</p>
+                                    <a href="#">Посмотреть</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="portfolio__slider-item" href="#">
+                                    <img src="./assets/img/portfolio/1.jpg" alt="Сайт">
+                                    
+                                </a>
+                                <div class="portfolio__slider-item__mask">
+                                    <p>Работа №2</p>
+                                    <a href="#">Посмотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- SWIPER ARROW -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- ------------ -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END PORTFOLIO -->
+
+
+
+    <!-- BEGIN SWIPER SLIDER SCRIPTS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 50,
+            freeMode: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- END SWIPER SLIDER -->
 
     <script src="./js/index.js"></script>
 </body>
+
 </html>
