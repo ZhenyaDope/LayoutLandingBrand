@@ -2,7 +2,7 @@
     background-color: #e6e6e6;
     display: flex;
     &__img{
-        background: url('../assets/img/advantages/bg.jpg') no-repeat center left;
+        background: url('../assets/img/advantages/bg.jpg') no-repeat center top / cover;
         width:50%;
     }
     &__content{

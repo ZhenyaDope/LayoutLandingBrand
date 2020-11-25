@@ -4,7 +4,7 @@
     justify-content: space-between;
     &__img{
         width:50%;
-        background: url('../assets/img/working/bg.jpg') no-repeat left top;
+        background: url('../assets/img/working/bg.jpg')no-repeat center top / cover;
     }
     &__text{
         width:50%;
