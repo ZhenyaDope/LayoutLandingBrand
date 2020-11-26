@@ -1,0 +1,76 @@
+.brief{
+    padding: 68px 0 110px;
+    background: url('../assets/img/brief/bg.jpg') fixed no-repeat top center / cover;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title-wrapper{
+        width: 390px;
+        height: 173px;
+        padding-top: 35px;
+        margin-bottom: 74px;
+        position: relative;
+        &::before{
+            content: '';
+            display: block;
+            border: 1px solid #f32323;
+            position: absolute;
+            border-left: none;
+            width: 350px;
+            height: 160px;
+            top: 4px;
+            left: 60px;
+        }
+    }
+    &__title{
+        font-size: 54px;
+        line-height: 50px;
+        &::before{
+            content:'';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 1px;
+            height: 25px;
+            background: #f32323;
+            left: 60px;
+            top: 5px;
+        }
+        &::after{
+            content:'';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 1px;
+            height: 25px;
+            background: #f32323;
+            left:60px;
+            bottom:7px;
+        }
+    }
+    &__subtitle{
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 500;
+        margin-bottom: 124px;
+        text-align: center;
+        max-width: 1000px;
+    }
+    &__buttons{
+        width:70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__btn{
+        padding:15px 40px;
+        font-size: 34px;
+        transition: .3s;
+        &:hover{
+            opacity: .8;
+        }
+    }
+}
